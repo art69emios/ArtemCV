@@ -290,7 +290,7 @@ height: 20px;
 
 
    .menu__icon{
-      z-index: 50;
+      z-index: 2;
       display: block;
       position: relative;
       width: 30px;
@@ -347,8 +347,9 @@ bottom: 0;
    background-color: rgba(0, 0, 0, 0.9);
    padding: 100px 30px 30px 30px;
    transition: left 0.3s ease 0s;
-   z-index: 10;
+   z-index: 1;
 }
+
 .menu__body._active{
    left: -30px;
 }
@@ -360,6 +361,7 @@ bottom: 0;
    
    font-size: 30px;
 }
+
 }
 @media(max-width: 759px){
    .as{
@@ -500,6 +502,7 @@ bottom: 0;
             height: 100%;
             top: 0;
             left: 0;
+            
          }
          .popup:target .popup__content{
             transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
@@ -515,7 +518,6 @@ bottom: 0;
       transform: perspective(600px) translate(0px, -200%) rotateX(45deg);
       opacity: 0;
    transition: all 0.8s ease 0s;
-   
     
          }
    .popup__close {
@@ -524,7 +526,7 @@ bottom: 0;
       top: 10px;
       font-size: 20px;
       text-decoration: none;
-      color: black;
+      color: wheat;
          }
    
    .popup__title {
